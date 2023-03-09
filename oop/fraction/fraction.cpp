@@ -106,17 +106,13 @@ Fraction Fraction::operator/=(const Fraction &f){
 }
 
 
-
 bool Fraction::operator==(const Fraction &f) 
 {
     return numerator == f.numerator && denominator == f.denominator;
 }
-
-
 bool Fraction::operator!=(const Fraction &f){
     return numerator != f.numerator || denominator != f.denominator;
 }
-
 bool Fraction::operator>=(const Fraction &f){
     return numerator * f.denominator >= denominator * f.numerator;
 }
