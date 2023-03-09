@@ -2,6 +2,7 @@
 #include<ctime>
 using namespace std;
 
+
 class Date{
 private:
     int day;
