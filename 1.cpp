@@ -1,0 +1,15 @@
+transaction_safe_dynamic
+__STDCPP_DEFAULT_NEW_ALIGNMENT__
+transaction_safe_dynamic
+transaction_safe_dynamic
+__STDCPP_DEFAULT_NEW_ALIGNMENT__
+transaction_safe_dynamic
+transaction_safe_dynamic
+__STDCPP_DEFAULT_NEW_ALIGNMENT__
+sizeofsd
+falsesd
+falsesd
+falsesda
+falsedaf
+stdf
+sda
