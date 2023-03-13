@@ -5,7 +5,6 @@ using namespace std;
 
 
 template<class T>
-
 class MyVector{
     private:
         T *arr;
@@ -98,18 +97,24 @@ void MyVector<T>::add(T value){
     arr = temp;
     size++;
 }
-template<class T>
-void MyVector<T>::addRange(T *a, int n){
+template <class T>
+void MyVector<T>::addRange(T *a, int n)
+{
     T *temp = new T[size + n];
-    for(int i = 0; i < size; i++){
+    for (int i = 0; i < size; i++)
+    {
         temp[i] = arr[i];
     }
-    for(int i = size; i < size + n; i++){
+    for (int i = size; i < size + n; i++)
+    {
         temp[i] = a[i - size];
     }
     delete[] arr;
     arr = temp;
     size += n;
+    // for(int i = 0; i < n; i++){
+    //     this -> add(a[i]);
+    // }
 }
 
 template<class T>
@@ -129,13 +134,13 @@ bool MyVector<T>::contains(T value){
     return false;
 }
 template<class T>
+
 void MyVector<T>::toArray(T *arr, int &n){
     n = size;
     for(int i = 0; i < size; i++){
-        arr[i] = this->arr[i];
+        arr[i] =this->arr[i];
     }
 }
-
 template<class T>
 bool MyVector<T>::equals(const MyVector &v){
     if(size != v.size){
@@ -170,6 +175,7 @@ int MyVector<T>::lastIndexOf(T value){
 
 
 template<class T>
+//void MyVector<T>::insert(T value, int index)
 void MyVector<T>::insert(T value, int index){
     T *temp = new T[size + 1];
     for(int i = 0; i < index; i++){
@@ -192,6 +198,7 @@ void MyVector<T>::remove(T value){
         removeAt(index);
     }
 }
+
 template<class T>
 void MyVector<T>::removeAt(int index){
     T *temp = new T[size - 1];
